@@ -1,0 +1,207 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 216
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"BHiT7kMlRoWW8nDXeus0pbF9CUSgttX6": {
+			"height": 94,
+			"title": "store",
+			"width": 289,
+			"x": 633,
+			"y": -111
+		},
+		"C6UcdTgXPGbojDQX5CpPSpCFWRlAXq3g": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 922,
+			"y": 8
+		},
+		"FF8hTwJyRRaLmXOuVXROMj2MxpSmoGrv": {
+			"height": 72,
+			"title": "echo",
+			"width": 175,
+			"x": 964,
+			"y": 227
+		},
+		"J72q6UsgVB5mlrQtVC4wLuQ3oMMyHhNT": {
+			"height": 88,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 633,
+			"y": -3
+		},
+		"TJcS7nPOcwWxGBAkY9DHJZfywmP3a3wL": {
+			"height": 94,
+			"title": "store",
+			"width": 519,
+			"x": 1108,
+			"y": -2
+		},
+		"aO3rfvGaDIGYIyovZu6eypaRItlCu72z": {
+			"height": 94,
+			"title": "store",
+			"width": 437,
+			"x": 1106,
+			"y": -94
+		},
+		"moEnHtCjDuOL5isUfsWggYjvO6qZL5xs": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 280,
+			"y": 18
+		},
+		"sPPizUAjP4QO5dTiiC7EelCZXuVY24a4": {
+			"height": 132,
+			"title": "formation.moveCustomGroup",
+			"width": 958,
+			"x": 1105,
+			"y": 91
+		},
+		"tnhfcAAHFsHLWwf2UqGy4iiZ7AFebZe0": {
+			"height": 54,
+			"title": "sequence",
+			"width": 143,
+			"x": 444,
+			"y": 21
+		},
+		"z5tlpryy6KwZNo8d72oxqlCOrOYe0VVz": {
+			"height": 97,
+			"title": "store",
+			"width": 233,
+			"x": 631,
+			"y": -207
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "z5tlpryy6KwZNo8d72oxqlCOrOYe0VVz",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "windData"
+				}, {
+					"name": "value",
+					"value": "nota_luhi_firstai.Wind()"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "BHiT7kMlRoWW8nDXeus0pbF9CUSgttX6",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "mav"
+				}, {
+					"name": "value",
+					"value": "nota_luhi_firstai.Maverick(units)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "aO3rfvGaDIGYIyovZu6eypaRItlCu72z",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "myGroup"
+						}, {
+							"name": "value",
+							"value": "nota_luhi_firstai.sandsail2().getGroupDef(units, mav.id)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "TJcS7nPOcwWxGBAkY9DHJZfywmP3a3wL",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "windLine"
+						}, {
+							"name": "value",
+							"value": "nota_luhi_firstai.sandsail2().getWindLine(windData.angle, #units, 50)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "sPPizUAjP4QO5dTiiC7EelCZXuVY24a4",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "groupDefintion",
+							"value": "myGroup"
+						}, {
+							"name": "position",
+							"value": "{x = mav.x + 100*math.sin(windData.angle), y = mav.y, z =  mav.z + 100*math.cos(windData.angle)}"
+						}, {
+							"name": "formation",
+							"value": "windLine"
+						}, {
+							"name": "fight",
+							"value": "false"
+						}, {
+							"name": "scriptName",
+							"value": "formation.moveCustomGroup"
+						} ],
+						"scriptName": "formation.moveCustomGroup"
+					} ],
+					"id": "C6UcdTgXPGbojDQX5CpPSpCFWRlAXq3g",
+					"nodeType": "sequence",
+					"parameters": []
+				}, {
+					"children": [],
+					"id": "FF8hTwJyRRaLmXOuVXROMj2MxpSmoGrv",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "msg",
+						"value": "mav"
+					}, {
+						"name": "scriptName",
+						"value": "echo"
+					} ],
+					"scriptName": "echo"
+				} ],
+				"id": "J72q6UsgVB5mlrQtVC4wLuQ3oMMyHhNT",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "mav ~= nil"
+				}, {
+					"name": "repeat",
+					"value": "false"
+				} ]
+			} ],
+			"id": "tnhfcAAHFsHLWwf2UqGy4iiZ7AFebZe0",
+			"nodeType": "sequence",
+			"parameters": []
+		} ],
+		"id": "moEnHtCjDuOL5isUfsWggYjvO6qZL5xs",
+		"nodeType": "repeat",
+		"parameters": []
+	}
+}
