@@ -34,7 +34,7 @@
 			"height": 97,
 			"title": "store",
 			"width": 233,
-			"x": 836,
+			"x": 837,
 			"y": -207
 		},
 		"Nu0VE9JSTrJnlS7VuwJ3RMNIy8V3nSRE": {
@@ -48,7 +48,7 @@
 			"height": 72,
 			"title": "echo",
 			"width": 175,
-			"x": 1027,
+			"x": 1028,
 			"y": 281
 		},
 		"QzsZiwclcJmLdUqIR8mGH9g9xmaIbX2x": {
@@ -62,21 +62,14 @@
 			"height": 94,
 			"title": "store",
 			"width": 289,
-			"x": 836,
+			"x": 837,
 			"y": -115
-		},
-		"eBaofUqkUCOQxPhcrDW30oInXyLnFul2": {
-			"height": 60,
-			"title": "repeat",
-			"width": 131,
-			"x": 1183,
-			"y": 207
 		},
 		"eKQr7K5hW59jL59w88ZglOoFnoftEp8K": {
 			"height": 94,
 			"title": "store",
 			"width": 418,
-			"x": 831,
+			"x": 832,
 			"y": -25
 		},
 		"i97Zqv2IAKaQwvoRHpCpJ2OxaBxQIIh6": {
@@ -90,42 +83,42 @@
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 256,
+			"x": 257,
 			"y": 13
 		},
 		"ljiW3AHBP5wTqlfBAvG60boTfgzzGKp7": {
 			"height": 88,
 			"title": "luaCondition",
 			"width": 194,
-			"x": 655,
+			"x": 656,
 			"y": 57
 		},
 		"mjzssc5kD18VPQqTlranIIscNIUY00Um": {
 			"height": 60,
 			"title": "sequence",
 			"width": 143,
-			"x": 653,
+			"x": 654,
 			"y": -55
 		},
 		"r8tik7jTSJg3NfAyQDaGF1SxsUBQ9Dj9": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 489,
+			"x": 490,
 			"y": -55
 		},
 		"rjVLU4vKEq4AdQQo8iwz3GgyCQNY2pVM": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 488,
+			"x": 489,
 			"y": 66
 		},
 		"u0oP6ThC1pH6nGf2SsEUmAO2r6kZJT8Y": {
 			"height": 70,
 			"title": "parallel",
 			"width": 202,
-			"x": 924,
+			"x": 925,
 			"y": 63
 		}
 	},
@@ -248,38 +241,33 @@
 						"nodeType": "repeat",
 						"parameters": []
 					}, {
-						"children": [ {
-							"children": [],
-							"id": "QzsZiwclcJmLdUqIR8mGH9g9xmaIbX2x",
-							"nodeType": "reference",
-							"parameters": [ {
-								"name": "behaviourName",
-								"value": "nota_luhi_firstai.constantMove"
-							} ],
-							"referenceInputs": [ {
-								"name": "alternate",
-								"value": "alternate"
-							}, {
-								"name": "myGroup",
-								"value": "myGroup"
-							}, {
-								"name": "curPosition",
-								"value": "mav"
-							}, {
-								"name": "myFormation",
-								"value": "windLine"
-							}, {
-								"name": "moveAngle",
-								"value": "windData.angle"
-							}, {
-								"name": "wannaFight",
-								"value": "false"
-							} ],
-							"referenceOutputs": []
+						"children": [],
+						"id": "QzsZiwclcJmLdUqIR8mGH9g9xmaIbX2x",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "nota_luhi_firstai.constantMove"
 						} ],
-						"id": "eBaofUqkUCOQxPhcrDW30oInXyLnFul2",
-						"nodeType": "repeat",
-						"parameters": []
+						"referenceInputs": [ {
+							"name": "alternate",
+							"value": "alternate"
+						}, {
+							"name": "myGroup",
+							"value": "myGroup"
+						}, {
+							"name": "curPosition",
+							"value": "mav"
+						}, {
+							"name": "myFormation",
+							"value": "windLine"
+						}, {
+							"name": "moveAngle",
+							"value": "windData.angle"
+						}, {
+							"name": "wannaFight",
+							"value": "false"
+						} ],
+						"referenceOutputs": []
 					} ],
 					"id": "u0oP6ThC1pH6nGf2SsEUmAO2r6kZJT8Y",
 					"nodeType": "parallel",

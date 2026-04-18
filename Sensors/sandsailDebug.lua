@@ -49,12 +49,12 @@ return function(mav, windData)
         local pz = math.cos(perpAngle) * perpLen
         local perpLine = { startPos = Vec3(x - px, y, z - pz), endPos = Vec3(x + px, y, z + pz) }
 
-        if (Script.LuaUI('sandsail_DrawWindLine')) then
+        if (Script.LuaUI('exampleDebug_update')) then
             local prefix = mav.id .. "_"
-            Script.LuaUI.sandsail_DrawWindLine(prefix .. "arrowShaft", shaft)
-            Script.LuaUI.sandsail_DrawWindLine(prefix .. "lArrowHead", leftH)
-            Script.LuaUI.sandsail_DrawWindLine(prefix .. "rArrowHead", rightH)
-            Script.LuaUI.sandsail_DrawWindLine(prefix .. "perpLine", perpLine)
+            Script.LuaUI.exampleDebug_update(prefix .. "arrowShaft", shaft)
+            Script.LuaUI.exampleDebug_update(prefix .. "lArrowHead", leftH)
+            Script.LuaUI.exampleDebug_update(prefix .. "rArrowHead", rightH)
+            Script.LuaUI.exampleDebug_update(prefix .. "perpLine", perpLine)
         end
 
         return shaft -- Returns A Line of the wind direction from mav
