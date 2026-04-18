@@ -9,75 +9,138 @@
 	"inputs": [],
 	"outputs": [],
 	"properties": {
-		"BHiT7kMlRoWW8nDXeus0pbF9CUSgttX6": {
-			"height": 94,
-			"title": "store",
-			"width": 289,
-			"x": 633,
-			"y": -111
-		},
-		"C6UcdTgXPGbojDQX5CpPSpCFWRlAXq3g": {
-			"height": 60,
-			"title": "sequence",
-			"width": 143,
-			"x": 922,
-			"y": 8
-		},
-		"FF8hTwJyRRaLmXOuVXROMj2MxpSmoGrv": {
-			"height": 72,
-			"title": "echo",
-			"width": 175,
-			"x": 964,
-			"y": 227
-		},
-		"J72q6UsgVB5mlrQtVC4wLuQ3oMMyHhNT": {
-			"height": 88,
-			"title": "luaCondition",
-			"width": 194,
-			"x": 633,
-			"y": -3
-		},
-		"TJcS7nPOcwWxGBAkY9DHJZfywmP3a3wL": {
-			"height": 94,
-			"title": "store",
-			"width": 519,
-			"x": 1108,
-			"y": -2
-		},
-		"aO3rfvGaDIGYIyovZu6eypaRItlCu72z": {
+		"0rw06i4Irgkxo08ARif4zHe1Gp58yuG1": {
 			"height": 94,
 			"title": "store",
 			"width": 437,
-			"x": 1106,
-			"y": -94
+			"x": 1516,
+			"y": -82
 		},
-		"moEnHtCjDuOL5isUfsWggYjvO6qZL5xs": {
+		"2APgO7bNCukglsDbV4Bqb16ZGJcntCmk": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1340,
+			"y": 66
+		},
+		"2pLCV0pHHoE7t9lg2AelEONTCA0EJSJy": {
+			"height": 132,
+			"title": "formation.moveCustomGroup",
+			"width": 736,
+			"x": 1613,
+			"y": 181
+		},
+		"30eUC33NYQEBpcOu9TGo2UPactFddM15": {
+			"height": 88,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 654,
+			"y": 57
+		},
+		"87jI0KP6SCRe8UV4ObnQZnOguSDFcysb": {
 			"height": 60,
 			"title": "repeat",
 			"width": 131,
-			"x": 280,
-			"y": 18
+			"x": 1183,
+			"y": 207
 		},
-		"sPPizUAjP4QO5dTiiC7EelCZXuVY24a4": {
+		"8Sylm0Vb2d8yx4Lh8bjbUSxzGe63rgtm": {
+			"height": 94,
+			"title": "store",
+			"width": 418,
+			"x": 831,
+			"y": -25
+		},
+		"BvV07fp4DCaNjxaWp4UjVutk3a1dQDNm": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 488,
+			"y": -55
+		},
+		"C9OxgDBYQi7E0NfOLfyl57TEDRs3eLkC": {
+			"height": 100,
+			"title": "luaCondition",
+			"width": 220,
+			"x": 1347,
+			"y": 193
+		},
+		"D17l2UPOcOEfRl3xpNfNtUvrIkE6qhjB": {
+			"height": 94,
+			"title": "store",
+			"width": 519,
+			"x": 1516,
+			"y": 6
+		},
+		"FEv5CBelsU8nsDMNpZoZMpJQqW6ORhcu": {
 			"height": 132,
 			"title": "formation.moveCustomGroup",
-			"width": 958,
-			"x": 1105,
-			"y": 91
+			"width": 736,
+			"x": 1615,
+			"y": 308
 		},
-		"tnhfcAAHFsHLWwf2UqGy4iiZ7AFebZe0": {
-			"height": 54,
-			"title": "sequence",
-			"width": 143,
-			"x": 444,
-			"y": 21
+		"H8mgQJmRW9Q0JV2ACWWJhK1xoHsTAJlv": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 255,
+			"y": 13
 		},
-		"z5tlpryy6KwZNo8d72oxqlCOrOYe0VVz": {
+		"PFR968RjeNgmN7x4N1J2rVLBXfU0SOzG": {
+			"height": 72,
+			"title": "echo",
+			"width": 175,
+			"x": 1027,
+			"y": 281
+		},
+		"XdOG0ZJlFzrYO4aYyrCYnLofQOgmHkGC": {
 			"height": 97,
 			"title": "store",
 			"width": 233,
-			"x": 631,
+			"x": 836,
 			"y": -207
+		},
+		"agMQ38BdbBOTCXSep1DcJD5yqtcb6pIa": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 1185,
+			"y": 67
+		},
+		"c7EddadvhIyHp9NbBy2d7plnnFO6gnE5": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 924,
+			"y": 63
+		},
+		"fkYbdd8vT4rsXkCgdIB6v1rcxshqgQKO": {
+			"height": 94,
+			"title": "store",
+			"width": 289,
+			"x": 836,
+			"y": -115
+		},
+		"gk6JM2VeWSoLtwqoBSnrw0dEjhua1OU2": {
+			"height": 92,
+			"title": "store",
+			"width": 220,
+			"x": 1519,
+			"y": 93
+		},
+		"vFi1wOMr0dKJrtMxbesg9C0ADCAuYuUI": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 487,
+			"y": 66
+		},
+		"x6kgY0FUAPiNGYkMyy5RWC5FHIQTLFq5": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 652,
+			"y": -55
 		}
 	},
 	"roles": [ {
@@ -87,95 +150,185 @@
 	"root": {
 		"children": [ {
 			"children": [ {
-				"children": [],
-				"id": "z5tlpryy6KwZNo8d72oxqlCOrOYe0VVz",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "var",
-					"value": "windData"
-				}, {
-					"name": "value",
-					"value": "nota_luhi_firstai.Wind()"
-				}, {
-					"name": "scriptName",
-					"value": "store"
-				} ],
-				"scriptName": "store"
-			}, {
-				"children": [],
-				"id": "BHiT7kMlRoWW8nDXeus0pbF9CUSgttX6",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "var",
-					"value": "mav"
-				}, {
-					"name": "value",
-					"value": "nota_luhi_firstai.Maverick(units)"
-				}, {
-					"name": "scriptName",
-					"value": "store"
-				} ],
-				"scriptName": "store"
-			}, {
 				"children": [ {
-					"children": [ {
-						"children": [],
-						"id": "aO3rfvGaDIGYIyovZu6eypaRItlCu72z",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "var",
-							"value": "myGroup"
-						}, {
-							"name": "value",
-							"value": "nota_luhi_firstai.sandsail2().getGroupDef(units, mav.id)"
-						}, {
-							"name": "scriptName",
-							"value": "store"
-						} ],
-						"scriptName": "store"
+					"children": [],
+					"id": "XdOG0ZJlFzrYO4aYyrCYnLofQOgmHkGC",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "windData"
 					}, {
-						"children": [],
-						"id": "TJcS7nPOcwWxGBAkY9DHJZfywmP3a3wL",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "var",
-							"value": "windLine"
-						}, {
-							"name": "value",
-							"value": "nota_luhi_firstai.sandsail2().getWindLine(windData.angle, #units, 50)"
-						}, {
-							"name": "scriptName",
-							"value": "store"
-						} ],
-						"scriptName": "store"
+						"name": "value",
+						"value": "nota_luhi_firstai.Wind()"
 					}, {
-						"children": [],
-						"id": "sPPizUAjP4QO5dTiiC7EelCZXuVY24a4",
-						"nodeType": "luaCommand",
-						"parameters": [ {
-							"name": "groupDefintion",
-							"value": "myGroup"
-						}, {
-							"name": "position",
-							"value": "{x = mav.x + 100*math.sin(windData.angle), y = mav.y, z =  mav.z + 100*math.cos(windData.angle)}"
-						}, {
-							"name": "formation",
-							"value": "windLine"
-						}, {
-							"name": "fight",
-							"value": "false"
-						}, {
-							"name": "scriptName",
-							"value": "formation.moveCustomGroup"
-						} ],
-						"scriptName": "formation.moveCustomGroup"
+						"name": "scriptName",
+						"value": "store"
 					} ],
-					"id": "C6UcdTgXPGbojDQX5CpPSpCFWRlAXq3g",
-					"nodeType": "sequence",
-					"parameters": []
+					"scriptName": "store"
 				}, {
 					"children": [],
-					"id": "FF8hTwJyRRaLmXOuVXROMj2MxpSmoGrv",
+					"id": "fkYbdd8vT4rsXkCgdIB6v1rcxshqgQKO",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "mav"
+					}, {
+						"name": "value",
+						"value": "nota_luhi_firstai.Maverick(units)"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "8Sylm0Vb2d8yx4Lh8bjbUSxzGe63rgtm",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "debugVar"
+					}, {
+						"name": "value",
+						"value": "nota_luhi_firstai.sandsailDebug(mav, windData)"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				} ],
+				"id": "x6kgY0FUAPiNGYkMyy5RWC5FHIQTLFq5",
+				"nodeType": "sequence",
+				"parameters": []
+			} ],
+			"id": "BvV07fp4DCaNjxaWp4UjVutk3a1dQDNm",
+			"nodeType": "repeat",
+			"parameters": []
+		}, {
+			"children": [ {
+				"children": [ {
+					"children": [ {
+						"children": [ {
+							"children": [ {
+								"children": [],
+								"id": "0rw06i4Irgkxo08ARif4zHe1Gp58yuG1",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "myGroup"
+								}, {
+									"name": "value",
+									"value": "nota_luhi_firstai.sandsail2().getGroupDef(units, mav.id)"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							}, {
+								"children": [],
+								"id": "D17l2UPOcOEfRl3xpNfNtUvrIkE6qhjB",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "windLine"
+								}, {
+									"name": "value",
+									"value": "nota_luhi_firstai.sandsail2().getWindLine(windData.angle, #units, 50)"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							}, {
+								"children": [],
+								"id": "gk6JM2VeWSoLtwqoBSnrw0dEjhua1OU2",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "var",
+									"value": "alternate"
+								}, {
+									"name": "value",
+									"value": "not alternate or True"
+								}, {
+									"name": "scriptName",
+									"value": "store"
+								} ],
+								"scriptName": "store"
+							} ],
+							"id": "2APgO7bNCukglsDbV4Bqb16ZGJcntCmk",
+							"nodeType": "sequence",
+							"parameters": []
+						} ],
+						"id": "agMQ38BdbBOTCXSep1DcJD5yqtcb6pIa",
+						"nodeType": "repeat",
+						"parameters": []
+					}, {
+						"children": [ {
+							"children": [ {
+								"children": [],
+								"id": "2pLCV0pHHoE7t9lg2AelEONTCA0EJSJy",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "groupDefintion",
+									"value": "myGroup"
+								}, {
+									"name": "position",
+									"value": "{x = mav.x + 100*math.sin(windData.angle), y = mav.y, z =  mav.z + 100*math.cos(windData.angle)}"
+								}, {
+									"name": "formation",
+									"value": "windLine"
+								}, {
+									"name": "fight",
+									"value": "false"
+								}, {
+									"name": "scriptName",
+									"value": "formation.moveCustomGroup"
+								} ],
+								"scriptName": "formation.moveCustomGroup"
+							}, {
+								"children": [],
+								"id": "FEv5CBelsU8nsDMNpZoZMpJQqW6ORhcu",
+								"nodeType": "luaCommand",
+								"parameters": [ {
+									"name": "groupDefintion",
+									"value": "myGroup"
+								}, {
+									"name": "position",
+									"value": "{x = mav.x + 100*math.sin(windData.angle), y = mav.y, z =  mav.z + 100*math.cos(windData.angle)}"
+								}, {
+									"name": "formation",
+									"value": "windLine"
+								}, {
+									"name": "fight",
+									"value": "false"
+								}, {
+									"name": "scriptName",
+									"value": "formation.moveCustomGroup"
+								} ],
+								"scriptName": "formation.moveCustomGroup"
+							} ],
+							"id": "C9OxgDBYQi7E0NfOLfyl57TEDRs3eLkC",
+							"nodeType": "luaCondition",
+							"parameters": [ {
+								"name": "expression",
+								"value": "alternate"
+							}, {
+								"name": "repeat",
+								"value": "true"
+							} ]
+						} ],
+						"id": "87jI0KP6SCRe8UV4ObnQZnOguSDFcysb",
+						"nodeType": "repeat",
+						"parameters": []
+					} ],
+					"id": "c7EddadvhIyHp9NbBy2d7plnnFO6gnE5",
+					"nodeType": "parallel",
+					"parameters": [ {
+						"name": "mode",
+						"value": "all-success"
+					} ]
+				}, {
+					"children": [],
+					"id": "PFR968RjeNgmN7x4N1J2rVLBXfU0SOzG",
 					"nodeType": "luaCommand",
 					"parameters": [ {
 						"name": "msg",
@@ -186,7 +339,7 @@
 					} ],
 					"scriptName": "echo"
 				} ],
-				"id": "J72q6UsgVB5mlrQtVC4wLuQ3oMMyHhNT",
+				"id": "30eUC33NYQEBpcOu9TGo2UPactFddM15",
 				"nodeType": "luaCondition",
 				"parameters": [ {
 					"name": "expression",
@@ -196,12 +349,15 @@
 					"value": "false"
 				} ]
 			} ],
-			"id": "tnhfcAAHFsHLWwf2UqGy4iiZ7AFebZe0",
-			"nodeType": "sequence",
+			"id": "vFi1wOMr0dKJrtMxbesg9C0ADCAuYuUI",
+			"nodeType": "repeat",
 			"parameters": []
 		} ],
-		"id": "moEnHtCjDuOL5isUfsWggYjvO6qZL5xs",
-		"nodeType": "repeat",
-		"parameters": []
+		"id": "H8mgQJmRW9Q0JV2ACWWJhK1xoHsTAJlv",
+		"nodeType": "parallel",
+		"parameters": [ {
+			"name": "mode",
+			"value": "all-success"
+		} ]
 	}
 }
