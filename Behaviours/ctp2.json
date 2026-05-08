@@ -1,0 +1,341 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"0b58jqBu9PBfUYnsFjf04uVd5md8JKeT": {
+			"height": 92,
+			"title": "store",
+			"width": 276,
+			"x": 546,
+			"y": -176
+		},
+		"19jc5tCsMJlYjfvuLnypNIuRpRdtXAGp": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 194,
+			"x": 845,
+			"y": 41
+		},
+		"3Bixu1oCESuuyTDpoZVoaMlnFvHNqvR1": {
+			"height": 94,
+			"title": "store",
+			"width": 350,
+			"x": 906,
+			"y": -77
+		},
+		"6Lt4mNe5eI2HfjCHxeHtJB96Ol8LZ5Et": {
+			"height": 130,
+			"title": "reference",
+			"width": 338,
+			"x": 1331,
+			"y": 143
+		},
+		"6TGS4nCsDccu2FbxSJGxw7A8WSChnkVF": {
+			"height": 92,
+			"title": "nota_luhi_firstai.TakeOverHills",
+			"width": 274,
+			"x": 508,
+			"y": 306
+		},
+		"8Rpm7miiiyuIdQ8uIuivMAFjTvFtKnP1": {
+			"height": 92,
+			"title": "nota_luhi_firstai.loadUnits",
+			"width": 244,
+			"x": 1297,
+			"y": -84
+		},
+		"FMvstq90OCQCluc2LPmsW19nlAKoYvqr": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1096,
+			"y": 164
+		},
+		"GOdIajNNsQdY60d5M01f95XcOEliEBBZ": {
+			"height": 114,
+			"title": "nota_luhi_firstai.unloadUnits",
+			"width": 342,
+			"x": 1295,
+			"y": 12
+		},
+		"JitUCcDgti31bpfMG3jcJiy94gXdCUeY": {
+			"height": 94,
+			"title": "store",
+			"width": 533,
+			"x": 545,
+			"y": -272
+		},
+		"KLnVmuuGVcdvTIefz2eph4ejzhe9BmRk": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 654,
+			"y": -22
+		},
+		"Kg5UIC2NDT4vjVfmzswQJzIo0SWISnkk": {
+			"height": 54,
+			"title": "nota_common.manualMissionEnd",
+			"width": 296,
+			"x": 510,
+			"y": 402
+		},
+		"Ow4020HOCgTqzs2OEQVQua7nHUXxNXH6": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1099,
+			"y": 53
+		},
+		"PCTZTbdeNHjKvJMsIqSSeGJStq0sQbU5": {
+			"height": 94,
+			"title": "store",
+			"width": 265,
+			"x": 905,
+			"y": -169
+		},
+		"WOc5vPiBNBhqIIuXbi04NBuIvRBF47GN": {
+			"height": 94,
+			"title": "store",
+			"width": 198,
+			"x": 543,
+			"y": -361
+		},
+		"caSqqKvEIaIneCtCxSndL44C0vpBjMBT": {
+			"height": 168,
+			"title": "reference",
+			"width": 303,
+			"x": 510,
+			"y": 41
+		},
+		"peO56ovzwWaAZhUX8RUqu7klPRvZ1Lz8": {
+			"height": 94,
+			"title": "store",
+			"width": 350,
+			"x": 512,
+			"y": 211
+		},
+		"wI32C6W8X4axVnrJDo1ddjLxfhslls7A": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 272,
+			"y": 11
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "WOc5vPiBNBhqIIuXbi04NBuIvRBF47GN",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "missionInfo"
+			}, {
+				"name": "value",
+				"value": "core.MissionInfo()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "JitUCcDgti31bpfMG3jcJiy94gXdCUeY",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "platforms"
+			}, {
+				"name": "value",
+				"value": "nota_mianencz_ctp2.GetPlatforms(128, core.MissionInfo().areaHeight)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "0b58jqBu9PBfUYnsFjf04uVd5md8JKeT",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "ePos"
+			}, {
+				"name": "value",
+				"value": "missionInfo.enemyPositions[1]"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "PCTZTbdeNHjKvJMsIqSSeGJStq0sQbU5",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "bearU"
+				}, {
+					"name": "value",
+					"value": "nota_luhi_firstai.BEAR(units)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [],
+				"id": "3Bixu1oCESuuyTDpoZVoaMlnFvHNqvR1",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "var",
+					"value": "restOfUnits"
+				}, {
+					"name": "value",
+					"value": "nota_luhi_firstai.ExcludeUnit(units, bearU)"
+				}, {
+					"name": "scriptName",
+					"value": "store"
+				} ],
+				"scriptName": "store"
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "8Rpm7miiiyuIdQ8uIuivMAFjTvFtKnP1",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "transporter",
+							"value": "bearU"
+						}, {
+							"name": "unitsToLoad",
+							"value": "restOfUnits"
+						}, {
+							"name": "scriptName",
+							"value": "nota_luhi_firstai.loadUnits"
+						} ],
+						"scriptName": "nota_luhi_firstai.loadUnits"
+					}, {
+						"children": [],
+						"id": "GOdIajNNsQdY60d5M01f95XcOEliEBBZ",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "transporter",
+							"value": "bearU"
+						}, {
+							"name": "unitsToUnload",
+							"value": "restOfUnits"
+						}, {
+							"name": "unloadPos",
+							"value": "Vec3(ePos.x - 400, ePos.y, ePos.z)"
+						}, {
+							"name": "scriptName",
+							"value": "nota_luhi_firstai.unloadUnits"
+						} ],
+						"scriptName": "nota_luhi_firstai.unloadUnits"
+					} ],
+					"id": "Ow4020HOCgTqzs2OEQVQua7nHUXxNXH6",
+					"nodeType": "sequence",
+					"parameters": []
+				}, {
+					"children": [ {
+						"children": [],
+						"id": "6Lt4mNe5eI2HfjCHxeHtJB96Ol8LZ5Et",
+						"nodeType": "reference",
+						"parameters": [ {
+							"name": "behaviourName",
+							"value": "nota_luhi_firstai.get_to_enemy"
+						} ],
+						"referenceInputs": [ {
+							"name": "position",
+							"value": "Vec3(ePos.x - 700, ePos.y, ePos.z)"
+						} ],
+						"referenceOutputs": []
+					} ],
+					"id": "FMvstq90OCQCluc2LPmsW19nlAKoYvqr",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "19jc5tCsMJlYjfvuLnypNIuRpRdtXAGp",
+				"nodeType": "luaCondition",
+				"parameters": [ {
+					"name": "expression",
+					"value": "bearU ~= nill"
+				}, {
+					"name": "repeat",
+					"value": "false"
+				} ]
+			} ],
+			"id": "KLnVmuuGVcdvTIefz2eph4ejzhe9BmRk",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [],
+			"id": "caSqqKvEIaIneCtCxSndL44C0vpBjMBT",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "nota_luhi_firstai.fight_enemy"
+			} ],
+			"referenceInputs": [ {
+				"name": "enemyPosition",
+				"value": "ePos"
+			} ],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "peO56ovzwWaAZhUX8RUqu7klPRvZ1Lz8",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "restOfUnits"
+			}, {
+				"name": "value",
+				"value": "nota_luhi_firstai.ExcludeUnit(units, bearU)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "6TGS4nCsDccu2FbxSJGxw7A8WSChnkVF",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "positions",
+				"value": "platforms"
+			}, {
+				"name": "capperUnits",
+				"value": "restOfUnits"
+			}, {
+				"name": "scriptName",
+				"value": "nota_luhi_firstai.TakeOverHills"
+			} ],
+			"scriptName": "nota_luhi_firstai.TakeOverHills"
+		}, {
+			"children": [],
+			"id": "Kg5UIC2NDT4vjVfmzswQJzIo0SWISnkk",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "scriptName",
+				"value": "nota_common.manualMissionEnd"
+			} ],
+			"scriptName": "nota_common.manualMissionEnd"
+		} ],
+		"id": "wI32C6W8X4axVnrJDo1ddjLxfhslls7A",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

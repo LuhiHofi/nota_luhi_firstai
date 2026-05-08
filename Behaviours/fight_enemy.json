@@ -1,0 +1,110 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 246
+		}
+	},
+	"inputs": [ {
+		"command": "BETS_POSITION",
+		"name": "enemyPosition"
+	} ],
+	"outputs": [],
+	"properties": {
+		"6lm9MJi10Uj0VD4LUubTI4VZrE45DAe8": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 282,
+			"y": 16
+		},
+		"Iz6L3T0RWATRbuo4F4HpEEjBPBl2cf5D": {
+			"height": 72,
+			"title": "wait",
+			"width": 131,
+			"x": 713,
+			"y": 138
+		},
+		"N4QAY0QyW99vds789f5aGJGa7ipvyW5o": {
+			"height": 112,
+			"title": "formation.move",
+			"width": 278,
+			"x": 705,
+			"y": 27
+		},
+		"vfRBAAHPQyKEA8oKV6VEBGYWD0fWshYP": {
+			"height": 94,
+			"title": "store",
+			"width": 640,
+			"x": 458,
+			"y": -69
+		},
+		"z46BmI8O98gS7lBd7VkfGm5amg2TnfRs": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 460,
+			"y": 54
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "vfRBAAHPQyKEA8oKV6VEBGYWD0fWshYP",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "wedgeFormation"
+			}, {
+				"name": "value",
+				"value": "formation.StaticTransform(formation.Definition(\"wedge\").positions,0,nill,Vec3(20,15,20))"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [ {
+				"children": [],
+				"id": "N4QAY0QyW99vds789f5aGJGa7ipvyW5o",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "position",
+					"value": "enemyPosition"
+				}, {
+					"name": "formation",
+					"value": "wedgeFormation"
+				}, {
+					"name": "fight",
+					"value": "true"
+				}, {
+					"name": "scriptName",
+					"value": "formation.move"
+				} ],
+				"scriptName": "formation.move"
+			}, {
+				"children": [],
+				"id": "Iz6L3T0RWATRbuo4F4HpEEjBPBl2cf5D",
+				"nodeType": "wait",
+				"parameters": [ {
+					"name": "time",
+					"value": 25
+				} ]
+			} ],
+			"id": "z46BmI8O98gS7lBd7VkfGm5amg2TnfRs",
+			"nodeType": "parallel",
+			"parameters": [ {
+				"name": "mode",
+				"value": "any-success"
+			} ]
+		} ],
+		"id": "6lm9MJi10Uj0VD4LUubTI4VZrE45DAe8",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

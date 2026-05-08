@@ -1,0 +1,80 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 216
+		}
+	},
+	"inputs": [ {
+		"command": "BETS_POSITION",
+		"name": "position"
+	} ],
+	"outputs": [],
+	"properties": {
+		"7KfYu6wTdjWzQawxw17NdUotvHtGbVug": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 503,
+			"y": 91
+		},
+		"9kxm5wDHGtuWJhkpRJ1uutvWTcE7Y5OC": {
+			"height": 112,
+			"title": "formation.move",
+			"width": 293,
+			"x": 673,
+			"y": 159
+		},
+		"Gyw1vc6Bzu5elEqVXq4yUt4qsSbYNcAc": {
+			"height": 94,
+			"title": "store",
+			"width": 933,
+			"x": 677,
+			"y": 39
+		}
+	},
+	"roles": [ {
+		"categories": [ "nota_majda_turinska_sandsail2_du_lastV.Maverick_orig", "nota_majda_turinska_sandsail2_du_lastV.follow_role", "Common.airUnits", "Common.bomberAirUnits", "Common.builders", "Common.buildings", "Common.fighterAirUnits", "Common.groundUnits", "Common.immobile", "Common.mobileBuilders", "Common.transports", "nota_majda_turinska_sandsail2_du.Maverick_orig", "nota_majda_turinska_sandsail2_du.follow_role", "nota_majda_turinska_sandsail2_du.maverick_role", "nota_raiders.bots", "nota_raiders.vehicles" ],
+		"name": "Default"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "Gyw1vc6Bzu5elEqVXq4yUt4qsSbYNcAc",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "wedgeFormation"
+			}, {
+				"name": "value",
+				"value": "formation.StaticTransform(formation.Definition(\"wedge\").positions,0,nill,Vec3(20,15,20))"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "9kxm5wDHGtuWJhkpRJ1uutvWTcE7Y5OC",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "position",
+				"value": "position"
+			}, {
+				"name": "formation",
+				"value": "wedgeFormation"
+			}, {
+				"name": "fight",
+				"value": "false"
+			}, {
+				"name": "scriptName",
+				"value": "formation.move"
+			} ],
+			"scriptName": "formation.move"
+		} ],
+		"id": "7KfYu6wTdjWzQawxw17NdUotvHtGbVug",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
