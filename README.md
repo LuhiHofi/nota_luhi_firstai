@@ -1,8 +1,33 @@
 # nota_luhi_firstai
 Repository for the course nail133 Human-like Artificial Agents on MFF UK  
 
-Includes: 
-- loadUnits and unloadUnits which extends kahlan's loadUnit and unloadUnit to multiple units
+
+
+### Missions:
 - sandsail2 solution with the Bonus
 - ctp2 with the Bonus
-    - I got inspired by majdaT, also used some code from kahlan and mianencz
+
+### Commands:
+- *loadUnits* - loads units into a transporter
+- *unloadUnits* - unloads units from a transporter on a given area
+- *TakeOverHills* - Captures all (hill) positions with a single unit (if enough units are left, otherwise captures as many most important hills (importance measured by ctp2 assignment)) 
+
+### Sensors:
+- *sandsail2* - contains getGroupDef and getWindLine functions
+    - getGroupDef returns a definition for the WindLine formation with a leader being the pointman
+    - getWindLine returns a line formation in a given angle with a given spacing
+- *sandsailDebug* - draws a line in the direction of the wind along with a perpendicular line to signify where the formation should be
+- *Wind* - returns the angle and the strength of the wind
+- *positionOfFirstUnit* - returns the position of the first unit
+- *Maverick* - returns the position and the ID of Maverick
+- *isAlive* - returns true if unitID is alive and visible, otherwise returns false
+- *getEnemyID* - returns the ID of an enemy unit on a selected position
+- *ExcludeUnit* - returns a list of units without an excluded one
+- *DoubleLineFormation* - returns a Double line formation
+- *BEAR* - returns the ID of a BEAR unit from the selected units
+
+### Behaviours
+- *sandsail2* - working sandsail2 hw with the bonus
+- *ctp2* - working ctp2 hw with the bonus
+- *get_to_enemy* - moves the units in a DoubleLineFormation towards a selected position, presumably where the enemy is, ready to fight
+- *fight_enemy* - fights an enemy unit situated on a position, returns SUCCESS if the enemy unit is destroyed

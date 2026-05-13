@@ -1,28 +1,24 @@
 local sensorInfo = {
 	name = "TakeOverHills",
-	desc = "Split units up and make them move to given position",
-	author = "MianenCZ + Luhi",
-	date = "2026-05-01",
+	desc = "Units secure positions on the selected hills",
+	author = "Luhi",
+	date = "2026-05-13",
 	license = "notAlicense",
 }
-
--- Luhi additions: 
--- Added functionality even if #capperUnits < #position
--- choose which units should cap the hills (For the option to exclude transporter)
 
 function getInfo()
 	return {
 		onNoUnits = SUCCESS, -- instant success
-		tooltip = "Move to defined position",
+		tooltip = "Units secure hillPositions",
 		parameterDefs = {
 			{ 
-				name = "positions",
+				name = "hillPositions",
 				variableType = "expression",
 				componentType = "editBox",
 				defaultValue = "",
 			},
 			{ 
-                name = "capperUnits",
+                name = "capperUnitIDs",
                 variableType = "expression",
                 componentType = "editBox",
                 defaultValue = "",
@@ -31,37 +27,41 @@ function getInfo()
 	}
 end
 
--- constants
-local THRESHOLD_STEP = 25
-
--- speed-ups
-local SpringGetUnitPosition = Spring.GetUnitPosition
-local SpringGiveOrderToUnit = Spring.GiveOrderToUnit
-
-local function ClearState(self)
-
+local function IsCommandInQueue(unitID, commandID)
+    local queue = Spring.GetUnitCommands(unitID)
+    if (queue) then
+        for i = 1, #queue do
+            if (queue[i].id == commandID) then
+                return true
+            end
+        end
+    end
+    return false
 end
 
 function Run(self, units, parameter)
-	local positions = parameter.positions -- Vec3[]
-	local capperUnits = parameter.capperUnits
-	local cmdID = CMD.MOVE
-	if (#positions > #capperUnits) then
-		local newPositions = {}
-		for i = 1, #capperUnits do
-			table.insert(newPositions, positions[#positions + 1 - i])
+	local threshold_distance = 20
+	local hillPositions = parameter.hillPositions
+	local capperUnitIDs = parameter.capperUnitIDs
+	
+	if (#hillPositions > #capperUnitIDs) then
+		local newhillPositions = {}
+		for i = #capperUnitIDs, 1, -1 do
+			newhillPositions[#newhillPositions + 1] = hillPositions[i]
 		end
-		positions = newPositions
+		hillPositions = newhillPositions
 	end
 
 	local destinationsReached = true
 
-	for i, position in ipairs(positions) do
-		local unitX, unitY, unitZ = SpringGetUnitPosition(capperUnits[i])
-		local unitPosition = Vec3(unitX, unitY, unitZ)
-		if unitPosition:Distance(position) > THRESHOLD_STEP then
+	for i, hillPosition in ipairs(hillPositions) do
+		local unitPosition = Vec3(Spring.GetUnitPosition(capperUnitIDs[i]))
+		if unitPosition:Distance(hillPosition) > threshold_distance then
 			destinationsReached = false
-			SpringGiveOrderToUnit(capperUnits[i], cmdID, position:AsSpringVector(), {})
+			if not IsCommandInQueue(capperUnitIDs[i], CMD.MOVE) then
+				local rawPos = {hillPosition.x, hillPosition.y, hillPosition.z}
+				Spring.GiveOrderToUnit(capperUnitIDs[i], CMD.MOVE, rawPos, {})
+			end
 		end
 	end
 
@@ -70,9 +70,4 @@ function Run(self, units, parameter)
 	else
 		return RUNNING
 	end
-end
-
-
-function Reset(self)
-	ClearState(self)
 end

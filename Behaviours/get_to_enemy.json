@@ -32,6 +32,13 @@
 			"width": 933,
 			"x": 677,
 			"y": 39
+		},
+		"ozIiUBRyY6984kGVMpKgKKto371GfGkW": {
+			"height": 94,
+			"title": "store",
+			"width": 335,
+			"x": 686,
+			"y": -80
 		}
 	},
 	"roles": [ {
@@ -41,14 +48,29 @@
 	"root": {
 		"children": [ {
 			"children": [],
+			"id": "ozIiUBRyY6984kGVMpKgKKto371GfGkW",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "DLineF"
+			}, {
+				"name": "value",
+				"value": "nota_luhi_firstai.DoubleLineFormation()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
 			"id": "Gyw1vc6Bzu5elEqVXq4yUt4qsSbYNcAc",
 			"nodeType": "luaCommand",
 			"parameters": [ {
 				"name": "var",
-				"value": "wedgeFormation"
+				"value": "DLineF"
 			}, {
 				"name": "value",
-				"value": "formation.StaticTransform(formation.Definition(\"wedge\").positions,0,nill,Vec3(20,15,20))"
+				"value": "formation.StaticTransform(DLineF,90,nill,Vec3(50,15,80))"
 			}, {
 				"name": "scriptName",
 				"value": "store"
@@ -63,10 +85,10 @@
 				"value": "position"
 			}, {
 				"name": "formation",
-				"value": "wedgeFormation"
+				"value": "DLineF"
 			}, {
 				"name": "fight",
-				"value": "false"
+				"value": "true"
 			}, {
 				"name": "scriptName",
 				"value": "formation.move"
