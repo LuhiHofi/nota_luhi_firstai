@@ -1,16 +1,16 @@
 # nota_luhi_firstai
 Repository for the course nail133 Human-like Artificial Agents on MFF UK  
 
-
-
 ### Missions:
 - sandsail2 solution with the Bonus
 - ctp2 with the Bonus
+- ttdr with the Bonus
 
 ### Commands:
 - *loadUnits* - loads units into a transporter
 - *unloadUnits* - unloads units from a transporter on a given area
 - *TakeOverHills* - Captures all (hill) positions with a single unit (if enough units are left, otherwise captures as many most important hills (importance measured by ctp2 assignment)) 
+- *ForbidLanding* - forbids idle air units to land
 
 ### Sensors:
 - *sandsail2* - contains getGroupDef and getWindLine functions
@@ -20,14 +20,20 @@ Repository for the course nail133 Human-like Artificial Agents on MFF UK
 - *Wind* - returns the angle and the strength of the wind
 - *positionOfFirstUnit* - returns the position of the first unit
 - *Maverick* - returns the position and the ID of Maverick
+- *IsCommandInQueue* - checks whether a command is in queue of commands of a unit  
 - *isAlive* - returns true if unitID is alive and visible, otherwise returns false
 - *getEnemyID* - returns the ID of an enemy unit on a selected position
 - *ExcludeUnit* - returns a list of units without an excluded one
 - *DoubleLineFormation* - returns a Double line formation
 - *BEAR* - returns the ID of a BEAR unit from the selected units
+- *IsCommandInQueue* - checks whether there is a command in queue
+- *GetRescuableUnits* - returns units that are rescuable
 
 ### Behaviours
 - *sandsail2* - working sandsail2 hw with the bonus
 - *ctp2* - working ctp2 hw with the bonus
 - *get_to_enemy* - moves the units in a DoubleLineFormation towards a selected position, presumably where the enemy is, ready to fight
 - *fight_enemy* - fights an enemy unit situated on a position, returns SUCCESS if the enemy unit is destroyed
+- *ttdr* - working ttdr solution with the bonus
+- *PeepersMapScan* - peepers scanning the map
+- *scanAndRescue* - scan the map and then use atlases to rescue units
