@@ -24,7 +24,7 @@ function getInfo()
                 defaultValue = "",
 			},
 			{	
-				name = "unloadArea", -- {Vec3 position, number radius}
+				name = "unloadArea", -- { pos = Vec3, radius = number}
 				variableType = "expression",
 				componentType = "editBox",
 				defaultValue = "",
@@ -33,25 +33,14 @@ function getInfo()
 	}
 end
 
-local function IsCommandInQueue(unitID, commandID)
-    local queue = Spring.GetUnitCommands(unitID)
-    if (queue) then
-        for i = 1, #queue do
-            if (queue[i].id == commandID) then
-                return true
-            end
-        end
-    end
-    return false
-end
-
 function Run(self, units, parameter)
+	local IsCommandInQueue = Sensors.nota_luhi_firstai.IsCommandInQueue
 	local transporterID = parameter.transporterID
 	local unitToUnloadIDs = parameter.unitToUnloadIDs
-	local unloadAreaRaw = parameter.unloadArea -- {Vec3, radius} 
+	local unloadAreaRaw = parameter.unloadArea -- {pos = Vec3, radius = number} 
 
-    local pos = unloadAreaRaw[1]
-    local radius = unloadAreaRaw[2]
+    local pos = unloadAreaRaw.pos
+    local radius = unloadAreaRaw.radius
 
 	local unloadArea = {pos.x, pos.y, pos.z, radius}
 

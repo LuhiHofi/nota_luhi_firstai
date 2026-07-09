@@ -27,19 +27,8 @@ function getInfo()
 	}
 end
 
-local function IsCommandInQueue(unitID, commandID)
-    local queue = Spring.GetUnitCommands(unitID)
-    if (queue) then
-        for i = 1, #queue do
-            if (queue[i].id == commandID) then
-                return true
-            end
-        end
-    end
-    return false
-end
-
 function Run(self, units, parameter)
+	local IsCommandInQueue = Sensors.nota_luhi_firstai.IsCommandInQueue
 	local transporterID = parameter.transporterID
 	local unitToLoadIDs = parameter.unitToLoadIDs
 

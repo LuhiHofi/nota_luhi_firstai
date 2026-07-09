@@ -1,0 +1,127 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 190,
+			"width": 247
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "unitsToRescue"
+	}, {
+		"command": "Variable",
+		"name": "peepers"
+	} ],
+	"outputs": [],
+	"properties": {
+		"B79SVu5qpU5WzCyaL6Xs9JW9y0LEtX60": {
+			"height": 72,
+			"title": "nota_michelle_intro.extractPathsToUnits",
+			"width": 337,
+			"x": 468,
+			"y": 179
+		},
+		"KK6cf4gr6CKeFUDfTuychHw45yKvocTi": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 277,
+			"y": 46
+		},
+		"UZcKpKHznkVNsdCdU8Ig3MGlUZGl7dUI": {
+			"height": 72,
+			"title": "nota_luhi_firstai.ttdr-peepersScan",
+			"width": 295,
+			"x": 467,
+			"y": -110
+		},
+		"eU7WXoqxxiIZhfVqUqUJIjEet7zQj4so": {
+			"height": 172,
+			"title": "nota_michelle_intro.findGridOfSafePoints",
+			"width": 342,
+			"x": 468,
+			"y": -47
+		},
+		"wDCL2tKSdC2OZB314B5CP1Eq1haBjDCt": {
+			"height": 72,
+			"title": "nota_michelle_intro.computePathsOverSafeGrid",
+			"width": 387,
+			"x": 468,
+			"y": 113
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "UZcKpKHznkVNsdCdU8Ig3MGlUZGl7dUI",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "peepers",
+				"value": "peepers"
+			}, {
+				"name": "scriptName",
+				"value": "nota_luhi_firstai.ttdr-peepersScan"
+			} ],
+			"scriptName": "nota_luhi_firstai.ttdr-peepersScan"
+		}, {
+			"children": [],
+			"id": "eU7WXoqxxiIZhfVqUqUJIjEet7zQj4so",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "enemyUnits",
+				"value": "bb.enemiesInfo"
+			}, {
+				"name": "step",
+				"value": "120"
+			}, {
+				"name": "heightThreshold",
+				"value": "95"
+			}, {
+				"name": "enemyDistanceThreshold",
+				"value": "1200"
+			}, {
+				"name": "enemyHeightThreshold",
+				"value": "310"
+			}, {
+				"name": "lowEnemyDistanceThreshold",
+				"value": "820"
+			}, {
+				"name": "scriptName",
+				"value": "nota_michelle_intro.findGridOfSafePoints"
+			} ],
+			"scriptName": "nota_michelle_intro.findGridOfSafePoints"
+		}, {
+			"children": [],
+			"id": "wDCL2tKSdC2OZB314B5CP1Eq1haBjDCt",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "safeArea",
+				"value": "bb.missionInfo.safeArea"
+			}, {
+				"name": "scriptName",
+				"value": "nota_michelle_intro.computePathsOverSafeGrid"
+			} ],
+			"scriptName": "nota_michelle_intro.computePathsOverSafeGrid"
+		}, {
+			"children": [],
+			"id": "B79SVu5qpU5WzCyaL6Xs9JW9y0LEtX60",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "unitsToRescue",
+				"value": "unitsToRescue"
+			}, {
+				"name": "scriptName",
+				"value": "nota_michelle_intro.extractPathsToUnits"
+			} ],
+			"scriptName": "nota_michelle_intro.extractPathsToUnits"
+		} ],
+		"id": "KK6cf4gr6CKeFUDfTuychHw45yKvocTi",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

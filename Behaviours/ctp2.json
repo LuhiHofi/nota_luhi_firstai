@@ -54,7 +54,7 @@
 		"GOdIajNNsQdY60d5M01f95XcOEliEBBZ": {
 			"height": 114,
 			"title": "nota_luhi_firstai.unloadUnits",
-			"width": 380,
+			"width": 475,
 			"x": 1295,
 			"y": 12
 		},
@@ -239,7 +239,7 @@
 							"value": "restOfUnits"
 						}, {
 							"name": "unloadArea",
-							"value": "{Vec3(ePos.x - 200, ePos.y, ePos.z), 50}"
+							"value": "{pos = Vec3(ePos.x - 200, ePos.y, ePos.z), radius = 50}"
 						}, {
 							"name": "scriptName",
 							"value": "nota_luhi_firstai.unloadUnits"
