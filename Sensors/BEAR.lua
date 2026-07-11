@@ -1,7 +1,7 @@
 local sensorInfo = {
     name = "MaverickInfo",
     desc = "Returns the X, Y, Z and ID of Maverick",
-	author = "Lukáš Hofman",
+	author = "Luhi",
 	date = "2026-04-14",
 	license = "notAlicense",
 }

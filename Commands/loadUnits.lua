@@ -1,11 +1,3 @@
-local sensorInfo = {
-	name = "loadUnits",
-	desc = "Loads desired units to a transporter",
-	author = "Luhi",
-	date = "2026-05-13",
-	license = "notAlicense",
-}
-
 function getInfo()
 	return {
 		onNoUnits = SUCCESS, -- instant success

@@ -32,7 +32,6 @@ function Run(self, units, parameter)
             return FAILURE
         end
         
-		self.last_position = Vec3(Spring.GetUnitPosition(unitID))
         self.is_initialized = true
     end
 
