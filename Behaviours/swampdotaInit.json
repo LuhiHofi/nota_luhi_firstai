@@ -41,8 +41,8 @@
 			"height": 94,
 			"title": "Mission Info",
 			"width": 267,
-			"x": 423,
-			"y": -482
+			"x": 425,
+			"y": -396
 		},
 		"SOIIBBXfyLmGhF4grygkP0L85sGsZXnt": {
 			"height": 92,
@@ -61,16 +61,9 @@
 		"Xpg8mncNbVb5klOjXfgnV50RwdDHH5lU": {
 			"height": 94,
 			"title": "Safe path",
-			"width": 336,
+			"width": 444,
 			"x": 420,
 			"y": 260
-		},
-		"YlplmAtuJET8cR6WhCvDCWMzuuRqP9tj": {
-			"height": 92,
-			"title": "Spawner ID",
-			"width": 439,
-			"x": 422,
-			"y": -315
 		},
 		"Yr9SZTzGzBQeOhoo5gi7EoV8huCrmW3W": {
 			"height": 58,
@@ -105,7 +98,7 @@
 			"title": "Unit categories",
 			"width": 479,
 			"x": 422,
-			"y": -399
+			"y": -313
 		}
 	},
 	"roles": [ {
@@ -138,21 +131,6 @@
 			}, {
 				"name": "value",
 				"value": "{state = {}, atlases = {}, seers = {}, mavericks = {}, lugers = {}}"
-			}, {
-				"name": "scriptName",
-				"value": "store"
-			} ],
-			"scriptName": "store"
-		}, {
-			"children": [],
-			"id": "YlplmAtuJET8cR6WhCvDCWMzuuRqP9tj",
-			"nodeType": "luaCommand",
-			"parameters": [ {
-				"name": "var",
-				"value": "bb.enemySpawnerID"
-			}, {
-				"name": "value",
-				"value": "bb.missionInfo.battleLines.EvilMiddle.spawnerBuildingID"
 			}, {
 				"name": "scriptName",
 				"value": "store"
@@ -212,7 +190,7 @@
 				"value": "bb.botRight"
 			}, {
 				"name": "value",
-				"value": "Vec3(xz.x, Spring.GetGroundHeight(xz.x, xz.z) + 50, xz.z)"
+				"value": "Vec3(xz.x, Spring.GetGroundHeight(xz.x, xz.z), xz.z)"
 			}, {
 				"name": "scriptName",
 				"value": "store"
@@ -257,7 +235,7 @@
 				"value": "bb.topRight"
 			}, {
 				"name": "value",
-				"value": "Vec3(xz.x, Spring.GetGroundHeight(xz.x, xz.z) + 50, xz.z)"
+				"value": "Vec3(xz.x, Spring.GetGroundHeight(xz.x, xz.z), xz.z)"
 			}, {
 				"name": "scriptName",
 				"value": "store"
@@ -287,7 +265,7 @@
 				"value": "bb.safePath"
 			}, {
 				"name": "value",
-				"value": "{bb.botRight, bb.topRight}"
+				"value": "{bb.botRight + Vec3(0,80,0), bb.topRight + Vec3(0,80,0)}"
 			}, {
 				"name": "scriptName",
 				"value": "store"

@@ -47,13 +47,11 @@ function Run(self, units, parameter)
     end
 
     local unitIsDead = Spring.GetUnitIsDead(transporter)
-    if unitIsDead == true or unitIsDead == nil then
-        -- transporter is dead
+    if not Spring.ValidUnitID(transporter) then
         return FAILURE
     end
-    unitIsDead = Spring.GetUnitIsDead(unitToLoad)
-    if unitIsDead == true or unitIsDead == nil then
-        -- unitToLoad is dead
+
+    if not Spring.ValidUnitID(unitToLoad) then
         return FAILURE
     end
 
@@ -68,9 +66,9 @@ function Run(self, units, parameter)
         return FAILURE
     end
     
-    if not IsCommandInQueue(transporter, CMD.LOAD_UNITS) then
-        Spring.GiveOrderToUnit(transporter, CMD.LOAD_UNITS, {unitToLoad}, {})
-    end
+    -- if not IsCommandInQueue(transporter, CMD.LOAD_UNITS) then
+    --     Spring.GiveOrderToUnit(transporter, CMD.LOAD_UNITS, {unitToLoad}, {})
+    -- end
     
     return RUNNING
 end
