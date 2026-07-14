@@ -1,0 +1,156 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"8txV1dKNoIOJDK3p6p3R3tnhJfyfnHjd": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 217,
+			"y": 5
+		},
+		"OVNL1wzbAlrPQsy2HpKgSMMbHGnUs4ZP": {
+			"height": 72,
+			"title": "nota_luhi_firstai.forbidLandingParam",
+			"width": 314,
+			"x": 957,
+			"y": 7
+		},
+		"TQhuOQKtgSSgEb089ZTWZCYRWfzuHYDb": {
+			"height": 60,
+			"title": "Update",
+			"width": 131,
+			"x": 629,
+			"y": -11
+		},
+		"X9HGv5qhmClcnyD35TYOEXdcHpHOe7f5": {
+			"height": 60,
+			"title": "Shopping",
+			"width": 195,
+			"x": 626,
+			"y": 117
+		},
+		"bjAn67q38y8XWGXDCrKJNx467bAqQf8l": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 778,
+			"y": -11
+		},
+		"iTNHKU1IUb8baURAOMCggFr4ZuHUp81r": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 394,
+			"y": 41
+		},
+		"k1vCme3FWYS2QiBsRjPEIGwpnSMmsUce": {
+			"height": 94,
+			"title": "store",
+			"width": 239,
+			"x": 954,
+			"y": -75
+		},
+		"qAC9YNaGhDP6bgnyoyUaBJmOJJ7gcLVD": {
+			"height": 110,
+			"title": "Perform shopping",
+			"width": 390,
+			"x": 848,
+			"y": 98
+		},
+		"xZzqqbTmdgnimAyyLd2eS8FPrJIUae0R": {
+			"height": 130,
+			"title": "reference",
+			"width": 273,
+			"x": 401,
+			"y": -141
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "xZzqqbTmdgnimAyyLd2eS8FPrJIUae0R",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "nota_luhi_firstai.swampdotaInit"
+			} ],
+			"referenceInputs": [],
+			"referenceOutputs": []
+		}, {
+			"children": [ {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "k1vCme3FWYS2QiBsRjPEIGwpnSMmsUce",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "bb.unitCounts"
+						}, {
+							"name": "value",
+							"value": "UpdateUnitInfo(bb.units)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "OVNL1wzbAlrPQsy2HpKgSMMbHGnUs4ZP",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "airUnits",
+							"value": "bb.units.atlases"
+						}, {
+							"name": "scriptName",
+							"value": "nota_luhi_firstai.forbidLandingParam"
+						} ],
+						"scriptName": "nota_luhi_firstai.forbidLandingParam"
+					} ],
+					"id": "bjAn67q38y8XWGXDCrKJNx467bAqQf8l",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "TQhuOQKtgSSgEb089ZTWZCYRWfzuHYDb",
+				"nodeType": "repeat",
+				"parameters": []
+			}, {
+				"children": [ {
+					"children": [],
+					"id": "qAC9YNaGhDP6bgnyoyUaBJmOJJ7gcLVD",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_luhi_firstai.shopping"
+					} ],
+					"referenceInputs": [],
+					"referenceOutputs": []
+				} ],
+				"id": "X9HGv5qhmClcnyD35TYOEXdcHpHOe7f5",
+				"nodeType": "repeat",
+				"parameters": []
+			} ],
+			"id": "iTNHKU1IUb8baURAOMCggFr4ZuHUp81r",
+			"nodeType": "parallel",
+			"parameters": [ {
+				"name": "mode",
+				"value": "all-success"
+			} ]
+		} ],
+		"id": "8txV1dKNoIOJDK3p6p3R3tnhJfyfnHjd",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

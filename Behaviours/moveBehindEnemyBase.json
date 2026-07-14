@@ -1,0 +1,326 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"0kzq37HcZkJ3QMVnt64n45o0cU2bErps": {
+			"height": 60,
+			"title": "Seer atlas",
+			"width": 145,
+			"x": 717,
+			"y": 463
+		},
+		"3su3FS04HboN8fIWDXz32Zogi4pYiwmq": {
+			"height": 172,
+			"title": "reference",
+			"width": 299,
+			"x": 1240,
+			"y": 133
+		},
+		"4g6rWYDPQ8y7pzFiRD9OzoZztNB8oh9Q": {
+			"height": 72,
+			"title": "Wait until ambush units are bought",
+			"width": 301,
+			"x": 379,
+			"y": -12
+		},
+		"FW3mFqJEbG8w7FoxzdT7YtqRd3EzLokv": {
+			"height": 94,
+			"title": "nota_luhi_firstai.moveUnit",
+			"width": 614,
+			"x": 1248,
+			"y": 646
+		},
+		"Lgx1sr5gfOX7aiOJrBHOpbAaGec5sq5K": {
+			"height": 172,
+			"title": "reference",
+			"width": 307,
+			"x": 1246,
+			"y": 483
+		},
+		"OoTYBP4fBCvSzNNF4fL4j7r01ud3CB86": {
+			"height": 70,
+			"title": "Setup ambush transportation",
+			"width": 265,
+			"x": 403,
+			"y": 64
+		},
+		"Vq77jf6BkzDktmcsRXP2zYNpBSZGxx9T": {
+			"height": 94,
+			"title": "Transport pair 1",
+			"width": 194,
+			"x": 956,
+			"y": -152
+		},
+		"WvjSgdenos3ZnWyUpfQOVnKn1TtLmRUn": {
+			"height": 60,
+			"title": "Luger atlas1",
+			"width": 161,
+			"x": 717,
+			"y": -65
+		},
+		"ekNtxjMJ9mMk273LAbGnmNUaGrgZcTHG": {
+			"height": 94,
+			"title": "Transport pair 4",
+			"width": 194,
+			"x": 1242,
+			"y": 404
+		},
+		"gUOMBcawwwqJQr3Tezmn9UonxMgzGEZi": {
+			"height": 94,
+			"title": "Transport pair 2",
+			"width": 194,
+			"x": 1240,
+			"y": 52
+		},
+		"hSnOFpoXxOZV1KOmrwoWV7asVeDqAChz": {
+			"height": 172,
+			"title": "reference",
+			"width": 299,
+			"x": 956,
+			"y": -72
+		},
+		"hbtvrYMp3YZ0LmG2O3T86Nm3iOjGkK4Z": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 196,
+			"y": 9
+		},
+		"jnhlkK4JlJwRBUlBL1Dc3cmrOG8ECrJe": {
+			"height": 172,
+			"title": "reference",
+			"width": 307,
+			"x": 955,
+			"y": 279
+		},
+		"ptDRcpV1Ot9tUv07dwtqnHXO6KqxoKYS": {
+			"height": 94,
+			"title": "Transport pair 3",
+			"width": 194,
+			"x": 958,
+			"y": 198
+		},
+		"xwpeLCE9cU9WJgeoc4tTdqjyaFAKtpzY": {
+			"height": 60,
+			"title": "Luger atlas2",
+			"width": 161,
+			"x": 718,
+			"y": 115
+		},
+		"yzCM0L2s2oUMS0nez2UKFv4bIW2aPzeT": {
+			"height": 60,
+			"title": "Luger atlas3",
+			"width": 161,
+			"x": 717,
+			"y": 263
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "4g6rWYDPQ8y7pzFiRD9OzoZztNB8oh9Q",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "condition",
+				"value": "bb.unitCounts.lugers >= 3"
+			}, {
+				"name": "scriptName",
+				"value": "waitUntil"
+			} ],
+			"scriptName": "waitUntil"
+		}, {
+			"children": [ {
+				"children": [ {
+					"children": [],
+					"id": "Vq77jf6BkzDktmcsRXP2zYNpBSZGxx9T",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "TP1"
+					}, {
+						"name": "value",
+						"value": "SetupTransport()"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "hSnOFpoXxOZV1KOmrwoWV7asVeDqAChz",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_luhi_firstai.transportUnit"
+					} ],
+					"referenceInputs": [ {
+						"name": "transporter",
+						"value": "TP1.atlas"
+					}, {
+						"name": "unitToTransport",
+						"value": "TP1.unitToTransport"
+					}, {
+						"name": "safePath",
+						"value": "bb.safePath"
+					} ],
+					"referenceOutputs": []
+				} ],
+				"id": "WvjSgdenos3ZnWyUpfQOVnKn1TtLmRUn",
+				"nodeType": "sequence",
+				"parameters": []
+			}, {
+				"children": [ {
+					"children": [],
+					"id": "gUOMBcawwwqJQr3Tezmn9UonxMgzGEZi",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "TP2"
+					}, {
+						"name": "value",
+						"value": "SetupTransport()"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "3su3FS04HboN8fIWDXz32Zogi4pYiwmq",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_luhi_firstai.transportUnit"
+					} ],
+					"referenceInputs": [ {
+						"name": "transporter",
+						"value": "TP2.atlas"
+					}, {
+						"name": "unitToTransport",
+						"value": "TP2.unitToTransport"
+					}, {
+						"name": "safePath",
+						"value": "bb.safePath"
+					} ],
+					"referenceOutputs": []
+				} ],
+				"id": "xwpeLCE9cU9WJgeoc4tTdqjyaFAKtpzY",
+				"nodeType": "sequence",
+				"parameters": []
+			}, {
+				"children": [ {
+					"children": [],
+					"id": "ptDRcpV1Ot9tUv07dwtqnHXO6KqxoKYS",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "TP3"
+					}, {
+						"name": "value",
+						"value": "SetupTransport()"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "jnhlkK4JlJwRBUlBL1Dc3cmrOG8ECrJe",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_luhi_firstai.transportUnit"
+					} ],
+					"referenceInputs": [ {
+						"name": "transporter",
+						"value": "TP3.atlas"
+					}, {
+						"name": "unitToTransport",
+						"value": "TP3.unitToTransport"
+					}, {
+						"name": "safePath",
+						"value": "bb.safePath"
+					} ],
+					"referenceOutputs": []
+				} ],
+				"id": "yzCM0L2s2oUMS0nez2UKFv4bIW2aPzeT",
+				"nodeType": "sequence",
+				"parameters": []
+			}, {
+				"children": [ {
+					"children": [],
+					"id": "ekNtxjMJ9mMk273LAbGnmNUaGrgZcTHG",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "var",
+						"value": "TP4"
+					}, {
+						"name": "value",
+						"value": "SetupTransport()"
+					}, {
+						"name": "scriptName",
+						"value": "store"
+					} ],
+					"scriptName": "store"
+				}, {
+					"children": [],
+					"id": "Lgx1sr5gfOX7aiOJrBHOpbAaGec5sq5K",
+					"nodeType": "reference",
+					"parameters": [ {
+						"name": "behaviourName",
+						"value": "nota_luhi_firstai.transportUnit"
+					} ],
+					"referenceInputs": [ {
+						"name": "transporter",
+						"value": "TP4.atlas"
+					}, {
+						"name": "unitToTransport",
+						"value": "TP4.unitToTransport"
+					}, {
+						"name": "safePath",
+						"value": "bb.safePath"
+					} ],
+					"referenceOutputs": []
+				}, {
+					"children": [],
+					"id": "FW3mFqJEbG8w7FoxzdT7YtqRd3EzLokv",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unit",
+						"value": "TP4.unitToTransport"
+					}, {
+						"name": "position",
+						"value": "Vec3(bb.topRight.x - bb.seerOffset, bb.topRight.y, bb.topRight.z + bb.seerOffset)"
+					}, {
+						"name": "scriptName",
+						"value": "nota_luhi_firstai.moveUnit"
+					} ],
+					"scriptName": "nota_luhi_firstai.moveUnit"
+				} ],
+				"id": "0kzq37HcZkJ3QMVnt64n45o0cU2bErps",
+				"nodeType": "sequence",
+				"parameters": []
+			} ],
+			"id": "OoTYBP4fBCvSzNNF4fL4j7r01ud3CB86",
+			"nodeType": "parallel",
+			"parameters": [ {
+				"name": "mode",
+				"value": "all-success"
+			} ]
+		} ],
+		"id": "hbtvrYMp3YZ0LmG2O3T86Nm3iOjGkK4Z",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

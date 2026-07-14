@@ -1,0 +1,331 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"0h9ivHSNY6AsxYQlhpMZasZ5q1h6g6AT": {
+			"height": 72,
+			"title": "Wait till next tick to avoid metal loss",
+			"width": 385,
+			"x": 511,
+			"y": 160
+		},
+		"79H67uq4vpAtYs5gPrGgjbQJPnb6Z9ab": {
+			"height": 72,
+			"title": "Buy Maverick (nota_luhi_firstai.buyUnit)",
+			"width": 332,
+			"x": 675,
+			"y": 55
+		},
+		"867liYsobhknHKNPrqzEZ7bMJQqMjL8P": {
+			"height": 72,
+			"title": "nota_luhi_firstai.buyUnit",
+			"width": 233,
+			"x": 1204,
+			"y": -47
+		},
+		"AGwY5Cd2z0WVL4ryLk8fC4rBnhjel9Gr": {
+			"height": 70,
+			"title": "Buy units",
+			"width": 139,
+			"x": 509,
+			"y": -78
+		},
+		"AVrsTaY9UM4bmminNjImaUzqdFGLSLXB": {
+			"height": 70,
+			"title": "selector",
+			"width": 131,
+			"x": 929,
+			"y": -143
+		},
+		"CFX3Fn2TJsN9FMP9rW6LBDvsXSMRoAaM": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 1160,
+			"y": -193
+		},
+		"Dsa9nRjJyamehyDH48jvHsFIJ4MaQD9J": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 1202,
+			"y": 15
+		},
+		"IpV0RtnhKf9kvdLdFYhMeMH66IHY4CSG": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 1087,
+			"y": -83
+		},
+		"NfmMggs4IOtVHfTK3k4alFWAhVz6YJtf": {
+			"height": 72,
+			"title": "nota_luhi_firstai.buyUnit",
+			"width": 233,
+			"x": 1087,
+			"y": -141
+		},
+		"PN8JNk7B17dWXjiU5ZVyuB6LDRNtrCdn": {
+			"height": 54,
+			"title": "failure",
+			"width": 131,
+			"x": 1005,
+			"y": -194
+		},
+		"RVm5KKvhs8IOAOGkFuYzjUPRhykXCwKH": {
+			"height": 54,
+			"title": "failure",
+			"width": 131,
+			"x": 1043,
+			"y": 16
+		},
+		"UKXnZ34nHpLtDObkQsp74XwujWkkgH51": {
+			"height": 54,
+			"title": "sequence",
+			"width": 143,
+			"x": 340,
+			"y": 12
+		},
+		"VE5aGvaAioPy6nKKdBY2oILvuM2FBUzz": {
+			"height": 54,
+			"title": "success",
+			"width": 132,
+			"x": 673,
+			"y": 115
+		},
+		"WiTBQXQVFdrP47rlD9vXP28eq7BNBstd": {
+			"height": 88,
+			"title": "luaCondition - No Seer",
+			"width": 225,
+			"x": 677,
+			"y": -118
+		},
+		"awTpx0RosTgeer4agc3c3Uw9fJumj7kH": {
+			"height": 88,
+			"title": "luaCondition - Note enough Lugers",
+			"width": 339,
+			"x": 675,
+			"y": -21
+		},
+		"gRBbeA3l085Fsk6TenSJ6uqRMYmAufdZ": {
+			"height": 54,
+			"title": "repeat",
+			"width": 131,
+			"x": 197,
+			"y": 12
+		},
+		"kAV4Z8qOflw7OelWtL7rHte3QEbHj7S9": {
+			"height": 70,
+			"title": "selector",
+			"width": 131,
+			"x": 1005,
+			"y": -253
+		},
+		"nOer21OxxSNamZBEbVjXZndByzLnsyIK": {
+			"height": 54,
+			"title": "failure",
+			"width": 131,
+			"x": 929,
+			"y": -84
+		},
+		"o6FAeVVesOC7we6EGwIWnAy7SdPRdn0B": {
+			"height": 70,
+			"title": "selector",
+			"width": 131,
+			"x": 1043,
+			"y": -43
+		},
+		"tmyy80Iw7wpFc5jFCJ6BqSyCjH0C11d6": {
+			"height": 88,
+			"title": "luaCondition - Not enough Atlases",
+			"width": 297,
+			"x": 677,
+			"y": -221
+		},
+		"xterqOBZlLq1WlgD0lP1JBK4fAEzVy5k": {
+			"height": 72,
+			"title": "nota_luhi_firstai.buyUnit",
+			"width": 233,
+			"x": 1158,
+			"y": -255
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [ {
+					"children": [ {
+						"children": [ {
+							"children": [],
+							"id": "xterqOBZlLq1WlgD0lP1JBK4fAEzVy5k",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "unitName",
+								"value": "'armatlas'"
+							}, {
+								"name": "scriptName",
+								"value": "nota_luhi_firstai.buyUnit"
+							} ],
+							"scriptName": "nota_luhi_firstai.buyUnit"
+						}, {
+							"children": [],
+							"id": "CFX3Fn2TJsN9FMP9rW6LBDvsXSMRoAaM",
+							"nodeType": "success",
+							"parameters": []
+						} ],
+						"id": "kAV4Z8qOflw7OelWtL7rHte3QEbHj7S9",
+						"nodeType": "selector",
+						"parameters": [ {
+							"name": "active",
+							"value": "false"
+						} ]
+					}, {
+						"children": [],
+						"id": "PN8JNk7B17dWXjiU5ZVyuB6LDRNtrCdn",
+						"nodeType": "failure",
+						"parameters": []
+					} ],
+					"id": "tmyy80Iw7wpFc5jFCJ6BqSyCjH0C11d6",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "bb.unitCounts.atlases < 4"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				}, {
+					"children": [ {
+						"children": [ {
+							"children": [],
+							"id": "NfmMggs4IOtVHfTK3k4alFWAhVz6YJtf",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "unitName",
+								"value": "'armseer'"
+							}, {
+								"name": "scriptName",
+								"value": "nota_luhi_firstai.buyUnit"
+							} ],
+							"scriptName": "nota_luhi_firstai.buyUnit"
+						}, {
+							"children": [],
+							"id": "IpV0RtnhKf9kvdLdFYhMeMH66IHY4CSG",
+							"nodeType": "success",
+							"parameters": []
+						} ],
+						"id": "AVrsTaY9UM4bmminNjImaUzqdFGLSLXB",
+						"nodeType": "selector",
+						"parameters": [ {
+							"name": "active",
+							"value": "false"
+						} ]
+					}, {
+						"children": [],
+						"id": "nOer21OxxSNamZBEbVjXZndByzLnsyIK",
+						"nodeType": "failure",
+						"parameters": []
+					} ],
+					"id": "WiTBQXQVFdrP47rlD9vXP28eq7BNBstd",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "bb.unitCounts.seers < 1"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				}, {
+					"children": [ {
+						"children": [ {
+							"children": [],
+							"id": "867liYsobhknHKNPrqzEZ7bMJQqMjL8P",
+							"nodeType": "luaCommand",
+							"parameters": [ {
+								"name": "unitName",
+								"value": "'armmart'"
+							}, {
+								"name": "scriptName",
+								"value": "nota_luhi_firstai.buyUnit"
+							} ],
+							"scriptName": "nota_luhi_firstai.buyUnit"
+						}, {
+							"children": [],
+							"id": "Dsa9nRjJyamehyDH48jvHsFIJ4MaQD9J",
+							"nodeType": "success",
+							"parameters": []
+						} ],
+						"id": "o6FAeVVesOC7we6EGwIWnAy7SdPRdn0B",
+						"nodeType": "selector",
+						"parameters": [ {
+							"name": "active",
+							"value": "false"
+						} ]
+					}, {
+						"children": [],
+						"id": "RVm5KKvhs8IOAOGkFuYzjUPRhykXCwKH",
+						"nodeType": "failure",
+						"parameters": []
+					} ],
+					"id": "awTpx0RosTgeer4agc3c3Uw9fJumj7kH",
+					"nodeType": "luaCondition",
+					"parameters": [ {
+						"name": "expression",
+						"value": "bb.unitCounts.lugers < 3"
+					}, {
+						"name": "repeat",
+						"value": "false"
+					} ]
+				}, {
+					"children": [],
+					"id": "79H67uq4vpAtYs5gPrGgjbQJPnb6Z9ab",
+					"nodeType": "luaCommand",
+					"parameters": [ {
+						"name": "unitName",
+						"value": "'armmav'"
+					}, {
+						"name": "scriptName",
+						"value": "nota_luhi_firstai.buyUnit"
+					} ],
+					"scriptName": "nota_luhi_firstai.buyUnit"
+				}, {
+					"children": [],
+					"id": "VE5aGvaAioPy6nKKdBY2oILvuM2FBUzz",
+					"nodeType": "success",
+					"parameters": []
+				} ],
+				"id": "AGwY5Cd2z0WVL4ryLk8fC4rBnhjel9Gr",
+				"nodeType": "selector",
+				"parameters": [ {
+					"name": "active",
+					"value": "false"
+				} ]
+			}, {
+				"children": [],
+				"id": "0h9ivHSNY6AsxYQlhpMZasZ5q1h6g6AT",
+				"nodeType": "wait",
+				"parameters": [ {
+					"name": "time",
+					"value": 2
+				} ]
+			} ],
+			"id": "UKXnZ34nHpLtDObkQsp74XwujWkkgH51",
+			"nodeType": "sequence",
+			"parameters": []
+		} ],
+		"id": "gRBbeA3l085Fsk6TenSJ6uqRMYmAufdZ",
+		"nodeType": "repeat",
+		"parameters": []
+	}
+}

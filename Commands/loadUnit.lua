@@ -1,7 +1,7 @@
 function getInfo()
 	return {
 		onNoUnits = SUCCESS, -- instant success
-		tooltip = "Unload a given unit from a given transporter to a given position.",
+		tooltip = "Load a given unit to a given transporter",
 		parameterDefs = {
 			{ 
 				name = "transporter",
@@ -10,13 +10,7 @@ function getInfo()
 				defaultValue = "",
 			},
 			{ 
-				name = "unitToUnload",
-				variableType = "expression",
-				componentType = "editBox",
-				defaultValue = "",
-			},
-			{ 
-				name = "position",
+				name = "unitToLoad",
 				variableType = "expression",
 				componentType = "editBox",
 				defaultValue = "",
@@ -27,8 +21,7 @@ end
 
 function Run(self, units, parameter)
     local transporter = parameter.transporter
-    local unitToUnload = parameter.unitToUnload
-    local position = parameter.position
+    local unitToLoad = parameter.unitToLoad
     local IsCommandInQueue = Sensors.nota_luhi_firstai.IsCommandInQueue
 
     -- initialization
@@ -38,27 +31,18 @@ function Run(self, units, parameter)
             Spring.Echo("FAILURE: transporter ID is invalid or nil.") 
             return FAILURE
         end
-        if not Spring.ValidUnitID(unitToUnload) then
+        if not Spring.ValidUnitID(unitToLoad) then
             Spring.Echo("FAILURE: unit ID is invalid or nil.") 
             return FAILURE
         end
-        -- unitToUnload is in a different transporter
-        unitTransporter = Spring.GetUnitTransporter(unitToUnload) 
-        if unitTransporter ~= nil and unitTransporter ~= transporter then
-            return FAILURE
-        end
 
-        if unitTransporter == nil then
-            return SUCCESS
-        end
-
-        Spring.GiveOrderToUnit(transporter, CMD.UNLOAD_UNIT, {position.x, position.y, position.z}, {})
+        Spring.GiveOrderToUnit(transporter, CMD.LOAD_UNITS, {unitToLoad}, {})
         
         self.is_initialized = true
     end
 
-    if Spring.GetUnitTransporter(unitToUnload) == nil then
-        -- unitToUnload is not loaded on transporter
+    if Spring.GetUnitTransporter(unitToLoad) == transporter then
+        -- unitToLoad is loaded on transporter
         return SUCCESS
     end
 
@@ -67,17 +51,27 @@ function Run(self, units, parameter)
         -- transporter is dead
         return FAILURE
     end
-    unitIsDead = Spring.GetUnitIsDead(unitToUnload)
+    unitIsDead = Spring.GetUnitIsDead(unitToLoad)
     if unitIsDead == true or unitIsDead == nil then
-        -- unitToUnload is dead
+        -- unitToLoad is dead
         return FAILURE
     end
 
-    if not IsCommandInQueue(transporter, CMD.UNLOAD_UNIT) then
-        Spring.GiveOrderToUnit(transporter, CMD.UNLOAD_UNIT, {position.x, position.y, position.z}, {})
+    local unitTransporter = Spring.GetUnitTransporter(unitToLoad) 
+    if unitTransporter ~= nil and unitTransporter ~= transporter then
+        -- unitToLoad already has a transporter
+        return FAILURE
     end
     
-
+    if #Spring.GetUnitIsTransporting(transporter) > 0 then
+        -- transporter is full
+        return FAILURE
+    end
+    
+    if not IsCommandInQueue(transporter, CMD.LOAD_UNITS) then
+        Spring.GiveOrderToUnit(transporter, CMD.LOAD_UNITS, {unitToLoad}, {})
+    end
+    
     return RUNNING
 end
 

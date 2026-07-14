@@ -1,0 +1,233 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 188,
+			"width": 255
+		}
+	},
+	"inputs": [ {
+		"command": "Variable",
+		"name": "transporter"
+	}, {
+		"command": "Variable",
+		"name": "unitToTransport"
+	}, {
+		"command": "Variable",
+		"name": "safePath"
+	} ],
+	"outputs": [],
+	"properties": {
+		"KnWkZTV0Br68IiZI2A9ZICD2gu6H4mn3": {
+			"height": 94,
+			"title": "store",
+			"width": 381,
+			"x": 527,
+			"y": -394
+		},
+		"OO9nsVWwLOOAJcKMA9JPAeIKEegrOirF": {
+			"height": 94,
+			"title": "store",
+			"width": 423,
+			"x": 536,
+			"y": 289
+		},
+		"S2NHrixITtg74qXzuMxApCL7uVdFuh6U": {
+			"height": 62,
+			"title": "sequence",
+			"width": 143,
+			"x": 304,
+			"y": 45
+		},
+		"UALlBsPQ68SGWleXs7tf4Jln3VxPAFcy": {
+			"height": 92,
+			"title": "nota_luhi_firstai.moveUnit",
+			"width": 245,
+			"x": 528,
+			"y": -313
+		},
+		"bAg9x4voKre8hXfWaU0CYee1lDrb21T9": {
+			"height": 112,
+			"title": "nota_luhi_firstai.unloadUnit",
+			"width": 253,
+			"x": 537,
+			"y": 190
+		},
+		"nLugKIBGeCnXrs8PC9AcbJosC6XlbOoX": {
+			"height": 94,
+			"title": "store",
+			"width": 531,
+			"x": 534,
+			"y": -36
+		},
+		"oiMOI6GhkBjvGj7Q3ag3Nx3Hy5kmF7qx": {
+			"height": 72,
+			"title": "wait to slow down",
+			"width": 193,
+			"x": 535,
+			"y": 129
+		},
+		"vTFOxHe7OYhE0dloaYamUUFuTYE3R4Mh": {
+			"height": 92,
+			"title": "nota_luhi_firstai.moveOnPath",
+			"width": 268,
+			"x": 528,
+			"y": -139
+		},
+		"yVYquFL3qYsX6vcVjL4c6TtNkXLwk8ej": {
+			"height": 92,
+			"title": "nota_luhi_firstai.loadUnit",
+			"width": 237,
+			"x": 531,
+			"y": -232
+		},
+		"zdc7dqDK2gMO0ZFcVXrmB8rZW5SpMleh": {
+			"height": 92,
+			"title": "nota_luhi_firstai.moveUnit",
+			"width": 245,
+			"x": 534,
+			"y": 48
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "KnWkZTV0Br68IiZI2A9ZICD2gu6H4mn3",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "unitPosition"
+			}, {
+				"name": "value",
+				"value": "Vec3(Spring.GetUnitPosition(unitToTransport))"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "UALlBsPQ68SGWleXs7tf4Jln3VxPAFcy",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "unit",
+				"value": "transporter"
+			}, {
+				"name": "position",
+				"value": "unitPosition"
+			}, {
+				"name": "scriptName",
+				"value": "nota_luhi_firstai.moveUnit"
+			} ],
+			"scriptName": "nota_luhi_firstai.moveUnit"
+		}, {
+			"children": [],
+			"id": "yVYquFL3qYsX6vcVjL4c6TtNkXLwk8ej",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "transporter",
+				"value": "transporter"
+			}, {
+				"name": "unitToLoad",
+				"value": "unitToTransport"
+			}, {
+				"name": "scriptName",
+				"value": "nota_luhi_firstai.loadUnit"
+			} ],
+			"scriptName": "nota_luhi_firstai.loadUnit"
+		}, {
+			"children": [],
+			"id": "vTFOxHe7OYhE0dloaYamUUFuTYE3R4Mh",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "unit",
+				"value": "transporter"
+			}, {
+				"name": "safePath",
+				"value": "safePath"
+			}, {
+				"name": "scriptName",
+				"value": "nota_luhi_firstai.moveOnPath"
+			} ],
+			"scriptName": "nota_luhi_firstai.moveOnPath"
+		}, {
+			"children": [],
+			"id": "nLugKIBGeCnXrs8PC9AcbJosC6XlbOoX",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "unloadPosition"
+			}, {
+				"name": "value",
+				"value": "safePath[2] + Vec3(math.random(400)-400, 0, math.random(400))"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "zdc7dqDK2gMO0ZFcVXrmB8rZW5SpMleh",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "unit",
+				"value": "transporter"
+			}, {
+				"name": "position",
+				"value": "unloadPosition"
+			}, {
+				"name": "scriptName",
+				"value": "nota_luhi_firstai.moveUnit"
+			} ],
+			"scriptName": "nota_luhi_firstai.moveUnit"
+		}, {
+			"children": [],
+			"id": "oiMOI6GhkBjvGj7Q3ag3Nx3Hy5kmF7qx",
+			"nodeType": "wait",
+			"parameters": [ {
+				"name": "time",
+				"value": 2
+			} ]
+		}, {
+			"children": [],
+			"id": "bAg9x4voKre8hXfWaU0CYee1lDrb21T9",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "transporter",
+				"value": "transporter"
+			}, {
+				"name": "unitToUnload",
+				"value": "unitToTransport"
+			}, {
+				"name": "position",
+				"value": "unloadPosition"
+			}, {
+				"name": "scriptName",
+				"value": "nota_luhi_firstai.unloadUnit"
+			} ],
+			"scriptName": "nota_luhi_firstai.unloadUnit"
+		}, {
+			"children": [],
+			"id": "OO9nsVWwLOOAJcKMA9JPAeIKEegrOirF",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "_"
+			}, {
+				"name": "value",
+				"value": "TransportFinished(transporter, unitToTransport, true)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		} ],
+		"id": "S2NHrixITtg74qXzuMxApCL7uVdFuh6U",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

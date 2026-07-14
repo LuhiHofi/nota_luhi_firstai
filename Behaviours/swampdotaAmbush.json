@@ -1,0 +1,297 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 88,
+			"width": 180
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"0srAeoZe83hzxgrFsN5AGV36c851YYNs": {
+			"height": 112,
+			"title": "nota_luhi_firstai.carefulAttack",
+			"width": 267,
+			"x": 1371,
+			"y": 5
+		},
+		"2EqyveZm76z0g9Z61KKIROv3kYlEVPrz": {
+			"height": 70,
+			"title": "parallel",
+			"width": 202,
+			"x": 433,
+			"y": 90
+		},
+		"4SxzmIv0d99Od3ihDOBDB3INB9C5Rc4w": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1194,
+			"y": 2
+		},
+		"4mbC9Pagudj3D1pvthNDOUWLfs1NqbYX": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 216,
+			"y": 8
+		},
+		"6O1bg4UJuqW4V2Y5pPQZjBy5qZ2zxpVp": {
+			"height": 94,
+			"title": "store",
+			"width": 293,
+			"x": 750,
+			"y": 53
+		},
+		"Al5VuqqpRokXpBW8zLq2XRZ7tMylwWv5": {
+			"height": 94,
+			"title": "store",
+			"width": 784,
+			"x": 1292,
+			"y": 254
+		},
+		"HnoDhXlEOVwbw25oN39Pv7G7KuCEobQI": {
+			"height": 110,
+			"title": "reference",
+			"width": 336,
+			"x": 427,
+			"y": -10
+		},
+		"IOTVYIuYqRbFlVI3tU5PbBCaUsee7O9V": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 918,
+			"y": 143
+		},
+		"OWVAOELBUUMbpbtttgF7goz8nwHelLc6": {
+			"height": 112,
+			"title": "nota_luhi_firstai.carefulAttack",
+			"width": 267,
+			"x": 1625,
+			"y": 152
+		},
+		"WyxE1FfOrDcrb8rlzC8pnUWuT5jOjr2n": {
+			"height": 112,
+			"title": "nota_luhi_firstai.carefulAttack",
+			"width": 267,
+			"x": 1292,
+			"y": 335
+		},
+		"aa2zNfotdGxNhgGYfaV39Y8tqPKr4ejK": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 1030,
+			"y": 113
+		},
+		"cKoMsVm38Goe5dUzEWT3FwicHiBIN5Rl": {
+			"height": 60,
+			"title": "repeat",
+			"width": 131,
+			"x": 805,
+			"y": 170
+		},
+		"eBGrP3sVrKRWCYHDAB9A2R9uDRvdA4Xx": {
+			"height": 94,
+			"title": "store",
+			"width": 784,
+			"x": 1368,
+			"y": -76
+		},
+		"wkkXVI2cmiuISNmuNLZ4A0KifyU3xhaH": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1364,
+			"y": 143
+		},
+		"yX9FkVk2ULgHmqTHtqNzk203DtihaQGu": {
+			"height": 94,
+			"title": "store",
+			"width": 784,
+			"x": 1625,
+			"y": 68
+		},
+		"ycqRJDNAglFsNsGQNmWedFIWIED7FBt3": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 1028,
+			"y": 302
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "HnoDhXlEOVwbw25oN39Pv7G7KuCEobQI",
+			"nodeType": "reference",
+			"parameters": [ {
+				"name": "behaviourName",
+				"value": "nota_luhi_firstai.moveBehindEnemyBase"
+			} ],
+			"referenceInputs": [],
+			"referenceOutputs": []
+		}, {
+			"children": [],
+			"id": "6O1bg4UJuqW4V2Y5pPQZjBy5qZ2zxpVp",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "bb.lugerMaxRange"
+			}, {
+				"name": "value",
+				"value": "GetUnitRange(bb.units.lugers[1])"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [ {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "eBGrP3sVrKRWCYHDAB9A2R9uDRvdA4Xx",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "ER1"
+						}, {
+							"name": "value",
+							"value": "GetClosestEnemy(Vec3(Spring.GetUnitPosition(bb.units.lugers[1])), bb.enemies)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "0srAeoZe83hzxgrFsN5AGV36c851YYNs",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitID",
+							"value": "bb.units.lugers[1]"
+						}, {
+							"name": "weaponRange",
+							"value": "bb.lugerMaxRange"
+						}, {
+							"name": "enemy",
+							"value": "ER1"
+						}, {
+							"name": "scriptName",
+							"value": "nota_luhi_firstai.carefulAttack"
+						} ],
+						"scriptName": "nota_luhi_firstai.carefulAttack"
+					} ],
+					"id": "4SxzmIv0d99Od3ihDOBDB3INB9C5Rc4w",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "aa2zNfotdGxNhgGYfaV39Y8tqPKr4ejK",
+				"nodeType": "repeat",
+				"parameters": []
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "yX9FkVk2ULgHmqTHtqNzk203DtihaQGu",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "ER2"
+						}, {
+							"name": "value",
+							"value": "GetClosestEnemy(Vec3(Spring.GetUnitPosition(bb.units.lugers[2])), bb.enemies)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "OWVAOELBUUMbpbtttgF7goz8nwHelLc6",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitID",
+							"value": "bb.units.lugers[2]"
+						}, {
+							"name": "weaponRange",
+							"value": "bb.lugerMaxRange"
+						}, {
+							"name": "enemy",
+							"value": "ER2"
+						}, {
+							"name": "scriptName",
+							"value": "nota_luhi_firstai.carefulAttack"
+						} ],
+						"scriptName": "nota_luhi_firstai.carefulAttack"
+					} ],
+					"id": "wkkXVI2cmiuISNmuNLZ4A0KifyU3xhaH",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "IOTVYIuYqRbFlVI3tU5PbBCaUsee7O9V",
+				"nodeType": "repeat",
+				"parameters": []
+			}, {
+				"children": [ {
+					"children": [ {
+						"children": [],
+						"id": "Al5VuqqpRokXpBW8zLq2XRZ7tMylwWv5",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "var",
+							"value": "ER3"
+						}, {
+							"name": "value",
+							"value": "GetClosestEnemy(Vec3(Spring.GetUnitPosition(bb.units.lugers[3])), bb.enemies)"
+						}, {
+							"name": "scriptName",
+							"value": "store"
+						} ],
+						"scriptName": "store"
+					}, {
+						"children": [],
+						"id": "WyxE1FfOrDcrb8rlzC8pnUWuT5jOjr2n",
+						"nodeType": "luaCommand",
+						"parameters": [ {
+							"name": "unitID",
+							"value": "bb.units.lugers[3]"
+						}, {
+							"name": "weaponRange",
+							"value": "bb.lugerMaxRange"
+						}, {
+							"name": "enemy",
+							"value": "ER3"
+						}, {
+							"name": "scriptName",
+							"value": "nota_luhi_firstai.carefulAttack"
+						} ],
+						"scriptName": "nota_luhi_firstai.carefulAttack"
+					} ],
+					"id": "ycqRJDNAglFsNsGQNmWedFIWIED7FBt3",
+					"nodeType": "sequence",
+					"parameters": []
+				} ],
+				"id": "cKoMsVm38Goe5dUzEWT3FwicHiBIN5Rl",
+				"nodeType": "repeat",
+				"parameters": []
+			} ],
+			"id": "2EqyveZm76z0g9Z61KKIROv3kYlEVPrz",
+			"nodeType": "parallel",
+			"parameters": [ {
+				"name": "mode",
+				"value": "all-success"
+			} ]
+		} ],
+		"id": "4mbC9Pagudj3D1pvthNDOUWLfs1NqbYX",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}

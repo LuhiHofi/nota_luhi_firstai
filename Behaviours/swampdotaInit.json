@@ -1,0 +1,316 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 108,
+			"width": 216
+		}
+	},
+	"inputs": [],
+	"outputs": [],
+	"properties": {
+		"3Nz2CyjamiWg63q44ea7dPtLZn945MNN": {
+			"height": 94,
+			"title": "Debug",
+			"width": 388,
+			"x": 852,
+			"y": 221
+		},
+		"3zxegOReugFwJwUHehPLLv4q93sxUT4p": {
+			"height": 94,
+			"title": "Debug",
+			"width": 388,
+			"x": 860,
+			"y": 17
+		},
+		"7CR7yP408MAW6QEEolgw9e2aTKuxpBll": {
+			"height": 94,
+			"title": "store",
+			"width": 631,
+			"x": 741,
+			"y": -106
+		},
+		"JT8d6a4DWmvQPlqKp2d47EfwW3A32Mpu": {
+			"height": 94,
+			"title": "Bottom right corner",
+			"width": 450,
+			"x": 429,
+			"y": -27
+		},
+		"OwYR7POw7D3LHiPW7FwFSKTZc9BwSay7": {
+			"height": 94,
+			"title": "Mission Info",
+			"width": 267,
+			"x": 423,
+			"y": -482
+		},
+		"SOIIBBXfyLmGhF4grygkP0L85sGsZXnt": {
+			"height": 92,
+			"title": "Map border offset",
+			"width": 334,
+			"x": 421,
+			"y": -151
+		},
+		"SPvoV6W0pSyyQa0rPsRusiaS3wIZmDbv": {
+			"height": 92,
+			"title": "store",
+			"width": 495,
+			"x": 742,
+			"y": 99
+		},
+		"Xpg8mncNbVb5klOjXfgnV50RwdDHH5lU": {
+			"height": 94,
+			"title": "Safe path",
+			"width": 336,
+			"x": 420,
+			"y": 260
+		},
+		"YlplmAtuJET8cR6WhCvDCWMzuuRqP9tj": {
+			"height": 92,
+			"title": "Spawner ID",
+			"width": 439,
+			"x": 422,
+			"y": -315
+		},
+		"Yr9SZTzGzBQeOhoo5gi7EoV8huCrmW3W": {
+			"height": 58,
+			"title": "Initialization",
+			"width": 156,
+			"x": 237,
+			"y": 18
+		},
+		"bNjk63QLSVgpXz9c5nL4zRUkYalO6yjR": {
+			"height": 92,
+			"title": "Seer safe offset",
+			"width": 425,
+			"x": 420,
+			"y": -234
+		},
+		"d2YknKZVm8UOevGUb3982l8Qfhaa64jn": {
+			"height": 94,
+			"title": "Enemy IDs",
+			"width": 267,
+			"x": 420,
+			"y": 341
+		},
+		"k7FMSpzWcHJFrVTBiohib7EnX7Dmi080": {
+			"height": 94,
+			"title": "Upper right corner",
+			"width": 450,
+			"x": 420,
+			"y": 178
+		},
+		"mdzdnqRoPm1yb2hrV2nX14vR50STZGK2": {
+			"height": 94,
+			"title": "Unit categories",
+			"width": 479,
+			"x": 422,
+			"y": -399
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [],
+			"id": "OwYR7POw7D3LHiPW7FwFSKTZc9BwSay7",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "bb.missionInfo"
+			}, {
+				"name": "value",
+				"value": "core.MissionInfo()"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "mdzdnqRoPm1yb2hrV2nX14vR50STZGK2",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "bb.units"
+			}, {
+				"name": "value",
+				"value": "{state = {}, atlases = {}, seers = {}, mavericks = {}, lugers = {}}"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "YlplmAtuJET8cR6WhCvDCWMzuuRqP9tj",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "bb.enemySpawnerID"
+			}, {
+				"name": "value",
+				"value": "bb.missionInfo.battleLines.EvilMiddle.spawnerBuildingID"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "bNjk63QLSVgpXz9c5nL4zRUkYalO6yjR",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "bb.seerOffset"
+			}, {
+				"name": "value",
+				"value": "500"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "SOIIBBXfyLmGhF4grygkP0L85sGsZXnt",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "mapBorderOffset"
+			}, {
+				"name": "value",
+				"value": "100"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "7CR7yP408MAW6QEEolgw9e2aTKuxpBll",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "xz"
+			}, {
+				"name": "value",
+				"value": "{ x = (Game.mapSizeX -mapBorderOffset), z = (Game.mapSizeZ - mapBorderOffset) }"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "JT8d6a4DWmvQPlqKp2d47EfwW3A32Mpu",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "bb.botRight"
+			}, {
+				"name": "value",
+				"value": "Vec3(xz.x, Spring.GetGroundHeight(xz.x, xz.z) + 50, xz.z)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "3zxegOReugFwJwUHehPLLv4q93sxUT4p",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "_"
+			}, {
+				"name": "value",
+				"value": "showPointDebug(bb.botRight, 'bot_right')"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "SPvoV6W0pSyyQa0rPsRusiaS3wIZmDbv",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "xz"
+			}, {
+				"name": "value",
+				"value": "{ x = Game.mapSizeX - mapBorderOffset, z = mapBorderOffset }"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "k7FMSpzWcHJFrVTBiohib7EnX7Dmi080",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "bb.topRight"
+			}, {
+				"name": "value",
+				"value": "Vec3(xz.x, Spring.GetGroundHeight(xz.x, xz.z) + 50, xz.z)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "3Nz2CyjamiWg63q44ea7dPtLZn945MNN",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "_"
+			}, {
+				"name": "value",
+				"value": "showPointDebug(bb.topRight, 'top_right')"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "Xpg8mncNbVb5klOjXfgnV50RwdDHH5lU",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "bb.safePath"
+			}, {
+				"name": "value",
+				"value": "{bb.botRight, bb.topRight}"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		}, {
+			"children": [],
+			"id": "d2YknKZVm8UOevGUb3982l8Qfhaa64jn",
+			"nodeType": "luaCommand",
+			"parameters": [ {
+				"name": "var",
+				"value": "bb.enemyIDs"
+			}, {
+				"name": "value",
+				"value": "Spring.GetTeamList(1)"
+			}, {
+				"name": "scriptName",
+				"value": "store"
+			} ],
+			"scriptName": "store"
+		} ],
+		"id": "Yr9SZTzGzBQeOhoo5gi7EoV8huCrmW3W",
+		"nodeType": "sequence",
+		"parameters": []
+	}
+}
